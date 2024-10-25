@@ -12,7 +12,7 @@ alto.addEventListener('input', function() {
     div.style.height = `${alto.value}px`;
 });
 sombra.addEventListener('input', function() {
-    div.style.boxShadow = `0px 4px ${sombra.value}px rgba(300, 100, 100, 100)`;
+    div.style.boxShadow = `0px 4px ${sombra.value}px rgb(156, 36, 148)`;
 });
 borde.addEventListener('input', function() {
     div.style.borderRadius = `${borde.value}px`;

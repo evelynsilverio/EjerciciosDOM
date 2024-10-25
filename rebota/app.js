@@ -7,7 +7,7 @@ const ball = {
     show: function(){
         ctx.fillStyle = `hsl(${this.x},50%,50%)`
         ctx.beginPath()
-        ctx.arc(this.x, this.y, 50, 0, Math.PI * 2);
+        ctx.arc(this.x, this.y, 30, 0, Math.PI * 2);
         ctx.fill();
     }
 }
@@ -18,7 +18,7 @@ let right = true;
 let down = true;
 
 setInterval(() => {
-    ctx.clearRect(0, 0, 600, 400)
+    // ctx.clearRect(0, 0, 600, 400)
     ball.x = x;
     ball.y = y;
     ball.show();

@@ -25,12 +25,30 @@
             display: block;
             margin: 20px auto;
             }
+        .boton{
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            
+            background: linear-gradient(45deg,#68106a, #3a0737);
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .boton:hover {
+            background: linear-gradient(45deg, #d640a7, #b537a4);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+        }
 
-            a {
+        a {
             padding: 10px 20px;
             font-size: 15px;
             font-weight: bold;
-            color: rgb(255, 255, 255);
+            color: rgb(9, 9, 9);
             background: linear-gradient(45deg,#68106a, #3a0737);
             border: none;
             border-radius: 12px;
@@ -47,16 +65,17 @@
             transform: translateY(-5px);
             box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
         }
+
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Cuadrado Animado</h1>
+        <h1>Juego de la Serpiente</h1>
         <canvas id="lienzo" width="600" height="400"></canvas>
-        <div class="button-container">
-            <a href="../index.html">Volver al Inicio</a></div>
+        <button class="boton" id="restartBtn" style="color: black;">Reiniciar Juego</button>
+    <div class="button-container">
+        <a href="../index.html">Volver al Inicio</a></div>
     </div>
-    <!-- <script src="./app.js"></script> -->
-    <script src="./square.js"></script>
+    <script src="app.js" ></script>
 </body>
 </html>

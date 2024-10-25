@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: white;
+            background-color: rgb(12, 12, 12);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -20,7 +20,29 @@
             padding: 50px;;
             border: 4px solid rgb(158, 51, 106);
             width: 300px;
+            color: azure;
             height: 300px;
+        }
+        a {
+            padding: 10px 20px;
+            font-size: 15px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            background: linear-gradient(45deg,#68106a, #3a0737);
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+
+        }
+
+        a:hover {
+            background: linear-gradient(45deg, #d640a7, #b537a4);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
@@ -41,6 +63,8 @@
         <div class="deslizador">
         Color: <input type="range" id="color" min="0" max="500" value="300">
         </div>
+        <div class="button-container">
+            <a href="../index.html">Volver al Inicio</a></div>
     </div>
     <script src="./cuadro.js"></script>
 </body>

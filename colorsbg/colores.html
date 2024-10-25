@@ -4,47 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deslizar Colores</title>
-    <h1 style="color: #f080d8;">Deslizar Colores</h1>
+    <h1>Deslizar Colores</h1>
     <style>
-        .deslizador {
-            display: grid;
-            width: 300px;
-            margin: 15px;
-            margin-left: 20px;
-        }
+        body {
+        margin-top: 300px;
+        width: 100px;
+        margin-left: 600px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+
+}
         h1{
-            margin-left: 600px;
-            margin-top: 200px;
+            color: #3a0737;
+            text-align: center;
+            margin-left: 100px;
+            margin-top: -200px;
             font-weight: 500px;
             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
         .content-box {
-        height: 100px;
-        width: 250px;
-        background-color: #ffffff;
-        padding: 50px;
-        border-radius: 12px;
-        box-shadow: 0 10px 19px rgb(221, 96, 150);
-        text-align: center;
-        display: flex;
-        margin-left: 550px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+            left: -500px;
+            margin-top: 20px;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            padding: 20px;
+            width: 250px;
+            background-color: #fff;
+            box-shadow: 0 0 15px 5px rgb(156, 36, 148);
+            border-radius: 12px;
+        }
+
+        .slider-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        label {
+            margin-right: 10px;
+        }
+
+        input[type="range"] {
+            width: 70%;
+        }
+
+
+            a {
+            padding: 10px 20px;
+            font-size: 15px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            background: linear-gradient(45deg,#68106a, #3a0737);
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 100px;
+            text-decoration: none;
+
+        }
+
+        a:hover {
+            background: linear-gradient(45deg, #d640a7, #b537a4);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+        }
+
 </style>
 </head>
 <body><br><br><br><br><br><br>
     <div class="content-box">
-    <div class="deslizador">
-        Rojo:<input type="range" id="rojo" min="0" max="255" value="0">
-    </div>
-    <div class="deslizador">
-        Verde:<input type="range" id="verde" min="0" max="255" value="0">
-    </div>
-    <div class="deslizador">
-        Azul:<input type="range" id="azul" min="0" max="255" value="0">
-    </div>
+        <div class="slider-container">
+            <label for="red">Rojo:</label>
+            <input type="range" id="rojo" name="rojo" min="0" max="255">
+        </div>
+        <div class="slider-container">
+            <label for="green">Verde:</label>
+            <input type="range" id="verde" name="verde" min="0" max="255">
+        </div>
+        <div class="slider-container">
+            <label for="blue">Azul:</label>
+            <input type="range" id="azul" name="azul" min="0" max="255">
+        </div>
+        <a href="../index.html">Volver al Inicio</a></div>
     <script src="colores.js"></script>
 </body>
 </html>

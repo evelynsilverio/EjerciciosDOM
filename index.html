@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos Javascript</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <h1>Ejercicios <br> de Javascript</h1>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color:#efbfdf;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: bold;
+            color: #1a232b;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 5px rgba(2, 2, 2, 2);
+            margin-top: 800px;
+            display: flex;
+            text-align: center;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column; /* Cambiado a columna */
+            gap: 20px;
+        }
+
+        a {
+            padding: 25px 10px;
+            width: 300px;
+            height: 70px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(45deg, #ff6b81, #f06595);
+            border: none;
+            border-radius: 50px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a:hover {
+            background: linear-gradient(45deg, #ff4757, #f06595);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .content-box {
+            margin-top: 50px;
+            height: 5000px;
+            width: 400px;
+            background-color: #ffffff;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 19px rgb(221, 96, 150);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-box">
+        <div class="button-container">
+            <a href="./game/index.html">Juego de la <br> Serpiente <br> 🐍</a>
+            <a href="./rebota/index.html">Bola que  <br> rebota <br> 🔴</a>
+            <a href="./animado/index.html">Cuadrado <br> animado <br> 🟩</a>
+            <a href="./animado/otro.html">Circulo <br> animado <br> 🟡</a>
+            <a href="./colorsbg/cuadro.html">Cuadro <br> Movible <br>◾</a>
+            <a href="./colorsbg/colores.html">Desliza y cambia <br> los colores de la pantalla <br> ☝️</a>
+            <a href="./dibujos/index.html">Dibujo <br> de Hallowen <br> 👻</a>
+            <a href="./todoapp/index.html">App Para <br> Tareas <br> 📝</a>
+        </div>
+    </div>
+</body>
+</html>
+
